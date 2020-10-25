@@ -17,3 +17,6 @@ step6: grep " 'description':" youtube_data.txt | wc -l
 
 # whoosh indexing and does a test query
 step1: python3 create_whoosh_index.py
+
+# Query on whoosh
+step1: run 'python3 query_on_whoosh.py home 2 1' will output a json-format result
